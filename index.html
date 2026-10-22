@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduNova Labs | Innovación Educativa</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navegación Header -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-icon">🚀</span>
+        <span class="logo-text">EduNova<span class="highlight">Labs</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#programas">Programas</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto" class="btn-primary-sm">Inscribirse</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge">Líderes en Innovación Educativa</span>
+        <h1>Lleva tu aprendizaje al <span class="gradient-text">siguiente nivel</span></h1>
+        <p>Aprende las habilidades tecnológicas con mayor demanda global mediante laboratorios prácticos y mentoría especializada.</p>
+        <div class="hero-actions">
+          <a href="#programas" class="btn-primary">Explorar Cursos</a>
+          <a href="#experiencia" class="btn-outline">Conocer Más</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>+5,000</strong>
+            <span>Estudiantes</span>
+          </div>
+          <div class="stat-item">
+            <strong>98%</strong>
+            <span>Empleabilidad</span>
+          </div>
+          <div class="stat-item">
+            <strong>4.9/5</strong>
+            <span>Calificación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo de Programas -->
+  <section id="programas" class="programs-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Catálogo de Programas</h2>
+        <p>Especialízate en las ramas con mayor proyección laboral del sector tecnológico.</p>
+      </div>
+
+      <!-- Filtros de especialidades -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="dev">Desarrollo & Code</button>
+        <button class="filter-btn" data-filter="data">Data & AI</button>
+        <button class="filter-btn" data-filter="net">Redes & Ciberseguridad</button>
+      </div>
+
+      <!-- Tarjetas de Cursos -->
+      <div class="courses-grid" id="courses-container">
+        
+        <div class="course-card" data-category="dev">
+          <div class="card-tag">Desarrollo</div>
+          <h3>Full Stack Developer Pro</h3>
+          <p>Domina HTML, CSS, JavaScript, React y Node.js para crear aplicaciones web completas y escalables.</p>
+          <div class="card-footer">
+            <span class="duration">⏱️ 16 Semanas</span>
+            <button class="btn-enroll" onclick="openEnrollModal('Full Stack Developer Pro')">Inscribirme</button>
+          </div>
+        </div>
+
+        <div class="course-card" data-category="data">
+          <div class="card-tag">Data & AI</div>
+          <h3>Python & Ciencia de Datos</h3>
+          <p>Análisis de datos, Machine Learning y automatización con Python, Pandas y Scikit-learn.</p>
+          <div class="card-footer">
+            <span class="duration">⏱️ 12 Semanas</span>
+            <button class="btn-enroll" onclick="openEnrollModal('Python & Ciencia de Datos')">Inscribirme</button>
+          </div>
+        </div>
+
+        <div class="course-card" data-category="net">
+          <div class="card-tag">Redes</div>
+          <h3>Infraestructura & Redes Cisco</h3>
+          <p>Fundamentos de networking, enrutamiento, conmutación y configuración de redes empresariales.</p>
+          <div class="card-footer">
+            <span class="duration">⏱️ 14 Semanas</span>
+            <button class="btn-enroll" onclick="openEnrollModal('Infraestructura & Redes Cisco')">Inscribirme</button>
+          </div>
+        </div>
+
+        <div class="course-card" data-category="net">
+          <div class="card-tag">Ciberseguridad</div>
+          <h3>Fundamentos de Ciberseguridad</h3>
+          <p>Protección de sistemas, análisis de vulnerabilidades y buenas prácticas de seguridad digital.</p>
+          <div class="card-footer">
+            <span class="duration">⏱️ 10 Semanas</span>
+            <button class="btn-enroll" onclick="openEnrollModal('Fundamentos de Ciberseguridad')">Inscribirme</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia del Estudiante -->
+  <section id="experiencia" class="experience-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Experiencia del Estudiante</h2>
+        <p>Metodología adaptada al aprendizaje interactivo, flexible y orientado a proyectos reales.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💻</div>
+          <h3>Laboratorios Prácticos</h3>
+          <p>Proyectos en entornos reales para consolidar los conocimientos teóricos desde el primer día.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3>Mentoría Personalizada</h3>
+          <p>Acompañamiento por parte de instructores certificados con experiencia activa en la industria.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📜</div>
+          <h3>Certificación Oficial</h3>
+          <p>Acredita tus competencias con insignias digitales y certificados respaldados por la industria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal de Inscripción -->
+  <div class="modal-overlay" id="enrollModal">
+    <div class="modal-box">
+      <button class="close-modal" onclick="closeEnrollModal()">✕</button>
+      <h2>Inscripción al Programa</h2>
+      <p id="modal-program-name">Programa Seleccionado</p>
+      
+      <form id="enroll-form">
+        <div class="form-group">
+          <label for="student-name">Nombre Completo</label>
+          <input type="text" id="student-name" placeholder="Ej. Juan Pérez" required>
+        </div>
+        <div class="form-group">
+          <label for="student-email">Correo Electrónico</label>
+          <input type="email" id="student-email" placeholder="correo@ejemplo.com" required>
+        </div>
+        <div class="form-group">
+          <label for="student-phone">Teléfono / WhatsApp</label>
+          <input type="tel" id="student-phone" placeholder="+51 987 654 321" required>
+        </div>
+        <button type="submit" class="btn-primary full-width">Confirmar Inscripción</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>EduNova Labs</h3>
+        <p>Transformando el futuro a través de la educación tecnológica de alto impacto.</p>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; EduNova Labs. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
